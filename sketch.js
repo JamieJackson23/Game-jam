@@ -1,10 +1,9 @@
-var classInstance;
 
 function setup()
 {
     createCanvas(800,800);
     
-    classInstance = new myClass();
+
 
 }
 
@@ -12,25 +11,11 @@ function draw()
 {
     background(150);
     
+    fill(255,0,0);
+    rect(100,100,100,100);
     
-    if('onResize' in classInstance)
-    {
-        console.log("Has property");
-    }
+
     
 }
 
 
-class myClass
-{
-    constructor()
-    {
-    
-    }
-
-    onResize()
-    {
-        
-    }
-    
-}
